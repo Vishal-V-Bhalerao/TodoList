@@ -1,4 +1,7 @@
-const express = require("express")
-const app = express()
+const express = require("express");
+const middleWare = require("./middleware/middleware");
 
-module.exports = app
+const app = express();
+middleWare(app);
+
+module.exports = app;
